@@ -13,14 +13,15 @@ for (const interfaceName in networkInterfaces) {
       const interfaces = networkInterfaces[interfaceName];
 
       for (const iface of interfaces) {
-            // Filtrer les adresses IPv4 non-localhost avec le masque 255.255.224.0
+            // the subnet of the school
             if (iface.family === 'IPv4' && !iface.internal && iface.netmask === '255.255.224.0') {
                   addresses.push(iface.address);
             }
       }
 }
-// const HOST = '172.18.80.134';
+
 const HOST = addresses[0];
+console.log(`host: ${HOST}`);
 // const server = net.createServer();
 
 
