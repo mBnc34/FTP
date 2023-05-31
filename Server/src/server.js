@@ -21,12 +21,13 @@ for (const interfaceName in networkInterfaces) {
 }
 // const HOST = '172.18.80.134';
 const HOST = addresses[0];
-const server = net.createServer();
+// const server = net.createServer();
 
 // le rootDirectory : le point d'entrée du client (ne peut pas aller avant ca). --> a limité selon les permissions
 // currentDirectory: pour se deplacer de rootDirectory jusqu'au plus petit sous dossier max
 // pour pwd, on peut penser à faire currentDirectory - rootDirectory pour commnencer a partir de rootDirectory et pas voir avant
 function startServer() {
+      const server = net.createServer();
       let activeConnections = 0;
 
       server.on('connection', socket => {

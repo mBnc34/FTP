@@ -1,7 +1,6 @@
 const commands = require('./command');
 const colors = require('ansi-colors');
-require('./commands/INDEX.js'); // apres enlever et creer des index.js dans chaque rep pour import les fichiers necessaire
-// console.log(commands.myCommands);
+require('./commands/INDEX.js'); 
 
 async function handleClientCommand(connectionInformation) {
 
