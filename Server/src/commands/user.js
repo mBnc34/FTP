@@ -17,7 +17,7 @@ function userFunction(connectionInformation, username) {
             //       // message d'erreur : already connected
             //       // connectionSocket.write('already connected');
             //       console.log("deja connecté");
-            //       connectionInformation.connectionSocket.write("error deja connecté\r\n"); //important pour debloquer le terminal du client
+            //       connectionInformation.connectionSocket.write("error deja connecté\r\n"); //to unblock terminal
             //       return;
             // };
             // else

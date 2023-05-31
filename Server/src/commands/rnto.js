@@ -6,11 +6,6 @@ const helpText = 'RNTO <sp> <pathname>';
 const description = 'To indicate the new name of a file/directory after RNFR command';
 
 
-/*
-For the moment i just rename without move ...
-So i can have error if the data in RNTO is not just a name but a path
-put more code for control
- */
 
 function rntoFunction(connectionInformation, newName) {
       let newPath = connectionInformation.rnfrPath.split("/").filter(str => str.trim() !== "");
