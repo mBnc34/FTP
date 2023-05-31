@@ -9,7 +9,7 @@ let localPort = 50225;
 
 async function portFunction(connectionInformation) {
 
-      // to extract Ipv4 if it's encapsuled in Ipv6 like ::::ff:theIPv4
+      // to extract Ipv4 if it's IPv4 mappedAddress like ::::ff:theIPv4
       let localAddress = connectionInformation.client.address().address;
       if (localAddress.includes("::ffff")) {
             let addrSplit =localAddress.split(":");
