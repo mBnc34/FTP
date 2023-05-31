@@ -79,6 +79,7 @@ async function Main() {
         }
       });
 
+
       await new Promise((resolve) => {
         connectionInformation.client.once('data', async (data) => {
           const response = data.toString();

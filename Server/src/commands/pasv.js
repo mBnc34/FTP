@@ -11,6 +11,7 @@ let localPort = 52222;
 
 function pasvFunction(connectionInformation) {
 
+            // to extract Ipv4 if it's IPv4 mappedAddress like ::::ff:theIPv4
       let localAddress = connectionInformation.connectionSocket.address().address;
       if (localAddress.includes("::ffff")) {
             let addrSplit =localAddress.split(":");
