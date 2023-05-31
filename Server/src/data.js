@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 const commands = require('./command');
-require('./commands/INDEX.js'); // apres enlever et creer des index.js dans chaque rep pour import les fichiers necessaire
+require('./commands/INDEX.js'); 
 // console.log(commands.myCommands);
 
 

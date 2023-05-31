@@ -63,7 +63,7 @@ function isOnScopeFun(rootDir, currentDir, path) {
             }
       }
       isOnScope = true;
-      dir = "/" + dir.join("/"); // a part si dir vide ??
+      dir = "/" + dir.join("/"); 
       dir = rootDir + dir;
       finalPath = dir;
 

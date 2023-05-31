@@ -3,7 +3,7 @@ const commands = require('../command.js');
 const net = require('net');
 
 const name = 'EPRT';
-const helpText = 'EPRT <sp> <host-port>'; //a changer plus tard
+const helpText = 'EPRT <sp> <host-port>'; 
 const description = 'To initiate any data transference in active mode';
 
 // let localAddress = 'localhost';
