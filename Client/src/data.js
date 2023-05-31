@@ -55,8 +55,9 @@ async function handleClientCommand(connectionInformation) {
                         await commands.myCommands["RENAME"].callback(connectionInformation);
                         break;
                   case "QUIT":
-                        console.log("test quit");
+                        console.log(colors.bold.green("Client closed\n"));
                         connectionInformation.client.write("QUIT");
+                        process.exit();
                         break;
                   default:
                         console.log(colors.bold.green("command no recognized\n"));

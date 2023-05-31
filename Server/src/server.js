@@ -5,7 +5,7 @@ const { handleUserCommand } = require('./data.js');
 // require('./commands/INDEX.js');//pour remplir toutes les commandes
 
 const PORT = 21000;
-// const HOST = 'localhost'; // a enlever pour ecouter sur d'autres reseau
+
 const networkInterfaces = os.networkInterfaces();
 const addresses = [];
 
