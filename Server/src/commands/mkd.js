@@ -54,7 +54,7 @@ function mkdFunction(connectionInformation, path) {
 function isOnScopeFun(rootDir, currentDir, path) {
       let dir = currentDir.replace(rootDir, "");
       dir = dir.split("/").filter(str => str.trim() !== ""); 
-      let pathArr = path.split("/").filter(str => str.trim() !== "");  //faire un msg si "/" au debut de path --> error
+      let pathArr = path.split("/").filter(str => str.trim() !== ""); 
 
       const dirName = pathArr.pop();
       console.log(`filename ${dirName}`);
